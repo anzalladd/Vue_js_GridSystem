@@ -1,26 +1,34 @@
 <template>
   <div id="app">
-    <Test/>
+    <Content/>
   </div>
 </template>
 
 <script>
-import Test from './components/Test'
+import Nav from './components/nav';
+import Content from './components/content'
 export default {
+  
   name: 'app',
   components:{
-    Test
-  }
-  
+    Nav,
+    Content
+  },
+
   }
 
 </script>
 
 <style>
+*,body{
+margin: 0;
+padding: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  
 }
+
 </style>
